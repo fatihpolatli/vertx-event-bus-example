@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title></title>
+    <script src="http://cdn.sockjs.org/sockjs-0.3.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vertx/3.4.2/vertx-eventbus.min.js"></script>
+    <!-- This is your generated service proxy -->
+    <!--<script src="vertx-database-js/some_database_service-proxy.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/app.js"></script>
+   
+</head>
+
+<body>
+
+    <div id="app">
+        {{message}}
+
+        <ul>
+                <li v-for="product in productList">
+                        {{ product.productId }} | {{product.name}}
+                      </li>
+        </ul>
+    </div>
+
+
+    <script>
+         
+    
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello Vue!',
+                    productList:[]
+                }
+            })
+        </script>
+
+</body>
+
+</html>
