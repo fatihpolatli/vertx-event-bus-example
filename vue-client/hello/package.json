@@ -11,7 +11,7 @@
     "axios": "^0.18.0",
     "core-js": "^2.6.5",
     "loadash": "^1.0.0",
-    "underscore": "^1.9.1",
+    "underscore": "^1.12.1",
     "vertx3-eventbus-client": "^3.7.0",
     "vue": "^2.6.10",
     "vue-underscore": "^0.1.4",
